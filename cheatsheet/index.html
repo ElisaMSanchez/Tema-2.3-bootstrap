@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap cheatsheet</title>
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.css">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- content  -->
+    <h1>Hola Mundo</h1>
+    <button class="btn btn-success">Click</button>
+
+    <div class="container my-4">
+        <h1>Contenedores responsive</h1>
+    </div>
+    <div class="container bg-light border">Container por defecto</div>
+    <div class="container-sm bg-light border">Container 100% hasta breakpoint pequeño</div>
+    <div class="container-md bg-light border">Container 100% hasta breakpoint medio</div>
+    <div class="container-lg bg-light border">Container 100% hasta breakpoint grande</div>
+    <div class="container-xl bg-light border">Container 100% hasta breakpoint extra grande</div>
+    <div class="container-fluid bg-light border">Container 100% ancho siempre</div>
+
+    <div class="container mt-3">
+        <h2 class="mt-4 mb-4 ml-2">Rejilla Bootstrap</h2>
+        <div class="row">
+            <div class="col-6 bg-light border">Col-6</div>
+            <div class="col-3 bg-light border">Col-3</div>
+            <div class="col-3 bg-light border">Col-3</div>
+        </div>
+        <!-- el valor de las col tiene que sumar 12 al final, porque lo que hace es gestionar porcentajes automáticamente -->
+        <div class="row">
+            <div class="col-8 bg-light border">Col-8</div>
+            <div class="col-2 bg-light border">Col-2</div>
+            <div class="col-2 bg-light border">Col-2</div>
+        </div>
+    </div>
+
+
+    <h2 class="ml-2 mt-4">columnas responsive</h2>
+    <div class="row">
+        <div class="col-12 col-md-6 col-xl-3 bg-light border">col-12 col-md-6 col-xl3</div>
+    </div>
+
+    <div class="row">
+        <div class=" col-6 col-lg-2 bg-light border">col-6 col-lg-2</div>
+    </div>
+
+    <h4 class="ml-2 mt-4">ejemplo</h4>
+    <div class="row">
+        <div class="col-12 col-md-6 col-xl-4 bg-light border">columna</div>
+        <div class="col-12 col-md-6 col-xl-4 bg-light border">columna</div>
+        <div class="col-12 col-xl-4 bg-light border">columna</div>
+    </div>
+
+    <h4 class="ml-2 mt-4">otro ejemplo</h4>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-light border">cositiquis</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-light border">cositiquis</div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-light border">cositiquis</div>
+        <div class="col-12 col-md-6 col-lg-12 col-xl-3 bg-light border">cositiquis</div>
+
+    </div>
+    <h4 class="ml-2 mt-4">Repartido</h4>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 bg-light border">cositiquis</div>
+        <div class="col-12 col-md-6 col-lg-4 bg-light border">cositiquis</div>
+        <div class="col-12 col-md-6 col-lg-4 bg-light border">cositiquis</div>
+        <div class="col-12 col-md-6 col-lg-12 d-xl-none bg-light border">cositiquis</div>
+    </div>
+    <!-- si quieres que se reparta equitativamente se puede quitar el numero -->
+    <!-- .d es para usar el display -->
+
+    <h2 class="ml-2 mt-4">Alineamiento vertical con flex</h2>
+    <div class="row sized border bg-dark align-items-start">
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+    <div class="row sized border bg-dark align-items-center">
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+    <div class="row sized border bg-dark align-items-end">
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+    <div class="row sized border bg-dark align-items-stretch">
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+
+    <h2 class="ml-2 mt-4">Alineamiento horinzotal con flex</h2>
+    <div class="row sized border bg-dark justify-content-start">
+        <div class="col-2 bg-light border">col</div>
+        <div class="col-2 bg-light border">col</div>
+        <div class="col-2 bg-light border">col</div>
+    </div>
+    <div class="row sized border bg-dark justify-content-center">
+        <div class="col-2 bg-light border">col</div>
+        <div class="col-2 bg-light border">col</div>
+        <div class="col-2 bg-light border">col</div>
+    </div>
+    <div class="row sized border bg-dark justify-content-end">
+        <div class="col-2 bg-light border">col</div>
+        <div class="col-2 bg-light border">col</div>
+        <div class="col-2 bg-light border">col</div>
+    </div>
+    <div class="row sized border bg-dark justify-content-stretch">
+        <div class="col-2 bg-light border">col</div>
+        <div class="col-2 bg-light border">col</div>
+        <div class="col-2 bg-light border">col</div>
+    </div>
+
+    <h2 class="mt-3">Display</h2>
+    <div class="row">
+        <div class="col d-lg-none d-xl-block bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+        <div class="col bg-light border">col</div>
+    </div>
+
+    <h2 class="mt-3">Tamaño y margenes</h2>
+    <div class="row sized bg-secondary pl-5 pr-3 pt-2">
+        <div class="col bg-light border h-75">col</div>
+        <div class="col bg-light border h-25 mt-2 mx-4">col</div>
+        <div class="col bg-light border h-50">col</div>
+
+    </div>
+
+    <h2 class="mt-3"> Componentes</h2>
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-success" role="alert">
+        A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-warning" role="alert">
+        A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-info" role="alert">
+        A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-light" role="alert">
+        A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-dark" role="alert">
+        A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
+            so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-secondary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-success" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-info" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-light" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-border text-dark" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+
+
+
+    <!-- end content  -->
+
+    <!-- scripts  -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.js"></script>
+    <!-- end scripts -->
+    <!-- el script va abajo del todo, los comentarios de content y end y script y end hay que ponerlos -->
+</body>
+
+</html>
