@@ -1,0 +1,43 @@
+/* css normal */
+
+a{
+    text-decoration: none;
+}
+
+//Sass
+
+$variable:20px;
+
+div{
+    background-color: black;
+
+    a{
+        color: white;
+    }
+
+    p{
+        font-size: $variable;
+    }
+
+    .main-paragraph{
+
+        line-height: 2 * $variable;
+    }
+
+    
+
+}
+
+$columns : 5;
+
+    @for $i from 1 through $columns{
+        .columns-#{$i} {
+            width : 100% / $i;
+        }
+        
+    }
+
+
+
+
+
