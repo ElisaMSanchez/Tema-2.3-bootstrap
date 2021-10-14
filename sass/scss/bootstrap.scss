@@ -1,0 +1,13 @@
+/* importaar los archivos base de bootstrap  */
+
+@import "../bootstrap-4.6.0/scss/functions";
+@import "../bootstrap-4.6.0/scss/variables";
+
+// personalizaciond variaBles 
+$theme-colors: (
+  "success":rgb(207, 241, 183)
+);
+
+//Importaremos el resto de bootstrap para que se procese
+
+@import "../bootstrap-4.6.0/scss/bootstrap.scss";
